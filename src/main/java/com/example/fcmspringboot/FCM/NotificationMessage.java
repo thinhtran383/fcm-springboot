@@ -1,4 +1,4 @@
-package com.example.fcmspringboot;
+package com.example.fcmspringboot.FCM;
 
 import lombok.Data;
 

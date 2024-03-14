@@ -1,4 +1,4 @@
-package com.example.fcmspringboot;
+package com.example.fcmspringboot.FCM;
 
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.messaging.FirebaseMessagingException;
