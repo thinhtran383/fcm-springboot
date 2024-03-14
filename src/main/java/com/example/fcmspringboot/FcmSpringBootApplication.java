@@ -8,10 +8,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 import java.io.IOException;
 
 @SpringBootApplication
+@EnableWebSecurity
+@EnableJpaRepositories
 public class FcmSpringBootApplication {
 
     @Bean
@@ -26,6 +30,8 @@ public class FcmSpringBootApplication {
         FirebaseApp app = FirebaseApp.initializeApp(firebaseOptions, "my-app");
         return FirebaseMessaging.getInstance(app);
     }
+
+
 
 
     public static void main(String[] args) {
